@@ -294,7 +294,7 @@ fn integration_tests() {
     use std::str::FromStr;
 
     let mut dbconn = Client::connect(
-        "host=localhost port=15432 user=test password=test dbname=test",
+        "postgres://user123:password123@localhost:5432/default",
         NoTls,
     )
     .unwrap();
